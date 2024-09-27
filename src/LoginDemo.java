@@ -18,5 +18,17 @@ public class LoginDemo {
 
         WebElement btnLogin = driver.findElement(By.name("submit"));
         btnLogin.click();
+
+       // driver.findElement(By.linkText("Add Customer")).click();
+        driver.findElement(By.partialLinkText("Add Cust")).click();
+
+        driver.findElement(By.name("name")).sendKeys("Saloni");
+        driver.findElement(By.name("address")).sendKeys("xyz");
+        driver.findElement(By.name("contact1")).sendKeys("5454545");
+        driver.findElement(By.name("contact2")).sendKeys("5454545");
+
+        driver.findElement(By.name("Submit")).click();
+
+
     }
 }
