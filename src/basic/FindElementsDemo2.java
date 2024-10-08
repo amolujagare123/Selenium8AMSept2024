@@ -1,3 +1,5 @@
+package basic;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -5,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.List;
 
-public class FindElementsDemo {
+public class FindElementsDemo2 {
 
     public static void main(String[] args) {
 
@@ -13,7 +15,7 @@ public class FindElementsDemo {
         driver.manage().window().maximize();
         driver.get("https://stock.scriptinglogic.in/");
 
-        List<WebElement> wbList = driver.findElements(By.className("round"));
+        List<WebElement> wbList = driver.findElements(By.tagName("input"));
         System.out.println(wbList.size());
 
         wbList.get(0).sendKeys("admin");
