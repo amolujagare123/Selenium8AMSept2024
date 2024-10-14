@@ -1,5 +1,7 @@
-package TestNGDemo.Demo;
+package TestNGDemo.Demo3;
 
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 public class ClassThree {
@@ -9,7 +11,7 @@ public class ClassThree {
         System.out.println("classThreeTest1");
     }
 
-    @Test(groups = "email")
+    @Test
     public void classThreeTest2()
     {
         System.out.println("classThreeTest2");
@@ -20,4 +22,17 @@ public class ClassThree {
     {
         System.out.println("classThreeTest3");
     }
+
+    @BeforeSuite
+    public void beforeMySuite()
+    {
+        System.out.println("beforeMySuite");
+    }
+
+    @AfterSuite
+    public void afterMySuite()
+    {
+        System.out.println("afterMySuite");
+    }
+
 }

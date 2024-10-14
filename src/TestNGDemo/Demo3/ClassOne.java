@@ -1,15 +1,29 @@
-package TestNGDemo.Demo;
+package TestNGDemo.Demo3;
 
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class ClassOne {
+
+    @BeforeTest
+    public void beforeMyTest()
+    {
+        System.out.println("beforeMyTest");
+    }
+
+    @AfterTest
+    public void afterMyTest()
+    {
+        System.out.println("afterMyTest");
+    }
 
     @Test
     public void classOneTest1()
     {
         System.out.println("classOneTest1");
     }
-    @Test (groups = "email") // (enabled = false)
+    @Test
     public void classOneTest2()
     {
         System.out.println("classOneTest2");

@@ -23,33 +23,29 @@ public class SocialSites {
         driver.close();
     }
 
-    @Test
-    public void facebook()
-    {
-        driver.get("http://facebook.com");
-    }
 
-    @Test
+
+    @Test (priority = 4)
     public void openFacebook() {
         driver.get("http://facebook.com");
     }
 
-    @Test
+    @Test (priority = 3)
     public void openTwitter() {
         driver.get("http://twitter.com");
     }
 
-    @Test
+    @Test (priority = 5)
     public void openInstagram() {
         driver.get("http://instagram.com");
     }
 
-    @Test
+    @Test (priority = 2)
     public void openLinkedIn() {
         driver.get("http://linkedin.com");
     }
 
-    @Test
+    @Test (priority = 1)
     public void openYouTube() {
         driver.get("http://youtube.com");
     }
