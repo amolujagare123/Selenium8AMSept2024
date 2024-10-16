@@ -1,5 +1,9 @@
 <suite name="MyProject all sites">
 
+    <listeners>
+        <listener class-name="org.testng.reporters.EmailableReporter2"/>
+    </listeners>
+
     <test name="module 1">
         <classes>
             <class name="TestNGDemo.Demo2.AISites"/>
