@@ -1,5 +1,9 @@
 <suite name="MyProject">
 
+    <listeners>
+        <listener class-name="ExtentReportsDemo.util.MyListener"/>
+    </listeners>
+
     <test name="module 1">
         <classes>
             <class name="TestNGDemo.Demo.ClassOne"/>
